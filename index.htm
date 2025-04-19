@@ -16,7 +16,8 @@
     <header class="p-4 shadow-lg">
         <div class="max-w-[1370px] flex justify-between h-16 mx-auto">
             <div class="flex">
-                <a rel="noopener noreferrer" href="/index.htm" aria-label="Back to homepage" class="flex mr-6 items-center p-2">
+                <a rel="noopener noreferrer" href="/index.htm" aria-label="Back to homepage"
+                    class="flex mr-6 items-center p-2">
                     <img class="max-w-[53px]" src="./img/starbucksLogo.png" alt="logo">
                 </a>
                 <ul class="items-stretch hidden space-x-3 mbl:flex">
@@ -62,7 +63,7 @@
             </button>
 
             <div id="openDiv"
-                class="fixed z-50 top-0 right-0 max-w-full w-[80%] h-screen bg-white p-4 translate-x-full transition-transform duration-500">
+                class="h-screen max-w-full p-4 fixed z-50 top-0 right-[-100%] border w-[80%] bg-white transition-all duration-500 ease-in-out">
                 <div class="flex justify-end">
                     <button onclick="openMobile()" class="p-4 mbl:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
@@ -75,28 +76,28 @@
                 <div class="pt-[40px] lg:hidden">
                     <div class="mb-8">
                         <li class="flex">
-                            <a rel="noopener noreferrer" href="/pages/menu.htm"
-                                class="flex items-center tracking-[1.1px] capitalize font-[400] text-[21px] px-4 -mb-1 hover:text-[#006241] transition-all">Menu</a>
+                            <a href="/pages/menu.htm"
+                                class="flex items-center tracking-[1.1px] capitalize font-[400] text-[21px] px-4 hover:text-[#006241] transition-all">Menu</a>
                         </li>
                     </div>
                     <div class="mb-8">
                         <li class="flex">
-                            <a rel="noopener noreferrer" href="#"
-                                class="flex items-center tracking-[1.1px] font-[400] text-[21px] px-4 -mb-1 hover:text-[#006241] transition-all">Rewards</a>
+                            <a href="#"
+                                class="flex items-center tracking-[1.1px] font-[400] text-[21px] px-4 hover:text-[#006241] transition-all">Rewards</a>
                         </li>
                     </div>
                     <div class="mb-8">
                         <li class="flex">
-                            <a rel="noopener noreferrer" href="#"
-                                class="flex items-center tracking-[1.1px] font-[400] text-[21px] px-4 -mb-1 hover:text-[#006241] transition-all">Gift
+                            <a href="#"
+                                class="flex items-center tracking-[1.1px] font-[400] text-[21px] px-4 hover:text-[#006241] transition-all">Gift
                                 Cards</a>
                         </li>
                     </div>
                 </div>
+
                 <hr class="mb-10 border-[1.1px]" />
 
                 <div class="items-center flex-shrink-0">
-
                     <div class="items-center flex-shrink-0 gap-6 mbl:flex">
                         <button
                             class="self-center py-[7px] mb-5 px-[16px] mr-3 font-semibold border border-black rounded-[20px] text-[14px] hover:bg-[#dbdbdb] transition-all">Sign
@@ -108,8 +109,7 @@
 
                     <li class="flex mt-5 hover:text-[#006241] transition-all">
                         <i class="fa-solid text-[20px] fa-location-dot"></i>
-                        <a rel="noopener noreferrer" href="#"
-                            class="flex text-[15px] font-[500] items-center px-2 -mb-1">Find a store</a>
+                        <a href="#" class="flex text-[15px] font-[500] items-center px-2">Find a store</a>
                     </li>
                 </div>
             </div>
@@ -334,78 +334,91 @@
 
         <div id="footerDrop" class="lg:hidden">
 
-        <div onclick="toggleFooter(1)" class="mb-4">
-            <div class="flex items-center justify-between py-2 text-[19px] max-md:text-[16px]">
-                <h5>About Us</h5>
-                <i id="icon1" class="fa-solid cursor-pointer fa-chevron-down"></i>
+            <div onclick="toggleFooter(1)" class="mb-4">
+                <div class="flex items-center justify-between py-2 text-[19px] max-md:text-[16px]">
+                    <h5>About Us</h5>
+                    <i id="icon1" class="fa-solid cursor-pointer fa-chevron-down"></i>
+                </div>
+                <div id="footerDown1" class="hidden mt-4">
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Our Company</a></div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Our Coffee</a></div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">About Starbucks</a></div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Starbucks Archive</a>
+                    </div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Investor Relations</a>
+                    </div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Customer Service</a></div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Accessibility</a></div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Contact Us</a></div>
+                </div>
             </div>
-            <div id="footerDown1" class="hidden mt-4">
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Our Company</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Our Coffee</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">About Starbucks</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Starbucks Archive</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Investor Relations</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Customer Service</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Accessibility</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Contact Us</a></div>
-            </div>
-        </div>
 
 
-        <div onclick="toggleFooter(2)" class="mb-4">
-            <div class="flex items-center justify-between py-2 text-[19px] max-md:text-[16px]">
-                <h5>Careers</h5>
-                <i id="icon2" class="fa-solid cursor-pointer fa-chevron-down"></i>
+            <div onclick="toggleFooter(2)" class="mb-4">
+                <div class="flex items-center justify-between py-2 text-[19px] max-md:text-[16px]">
+                    <h5>Careers</h5>
+                    <i id="icon2" class="fa-solid cursor-pointer fa-chevron-down"></i>
+                </div>
+                <div id="footerDown2" class="hidden mt-4">
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Culture and Values</a>
+                    </div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Belonging at Starbucks</a>
+                    </div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">College Achievement
+                            Plan</a></div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Alumni Community</a></div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">U.S. Careers</a></div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">International Careers</a>
+                    </div>
+                </div>
             </div>
-            <div id="footerDown2" class="hidden mt-4">
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Culture and Values</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Belonging at Starbucks</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">College Achievement Plan</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Alumni Community</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">U.S. Careers</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">International Careers</a></div>
-            </div>
-        </div>
 
-        <div onclick="toggleFooter(3)" class="mb-4">
-            <div class="flex items-center justify-between py-2 text-[19px] max-md:text-[16px]">
-                <h5>Social Impact</h5>
-                <i id="icon3" class="fa-solid cursor-pointer fa-chevron-down"></i>
+            <div onclick="toggleFooter(3)" class="mb-4">
+                <div class="flex items-center justify-between py-2 text-[19px] max-md:text-[16px]">
+                    <h5>Social Impact</h5>
+                    <i id="icon3" class="fa-solid cursor-pointer fa-chevron-down"></i>
+                </div>
+                <div id="footerDown3" class="hidden mt-4">
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Communities</a></div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Starbucks Foundation</a>
+                    </div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Sustainability</a></div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Environmental and Social
+                            Impact Reporting</a></div>
+                </div>
             </div>
-            <div id="footerDown3" class="hidden mt-4">
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Communities</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Starbucks Foundation</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Sustainability</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Environmental and Social Impact Reporting</a></div>
-            </div>
-        </div>
 
-        <div onclick="toggleFooter(4)" class="mb-4">
-            <div class="flex items-center justify-between py-2 text-[19px] max-md:text-[16px]">
-                <h5>For Business Partners</h5>
-                <i id="icon4" class="fa-solid cursor-pointer fa-chevron-down"></i>
+            <div onclick="toggleFooter(4)" class="mb-4">
+                <div class="flex items-center justify-between py-2 text-[19px] max-md:text-[16px]">
+                    <h5>For Business Partners</h5>
+                    <i id="icon4" class="fa-solid cursor-pointer fa-chevron-down"></i>
+                </div>
+                <div id="footerDown4" class="hidden mt-4">
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Landlord Support
+                            Center</a></div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Suppliers</a></div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Corporate Gift Card
+                            Sales</a></div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Office and Foodservice
+                            Coffee</a></div>
+                </div>
             </div>
-            <div id="footerDown4" class="hidden mt-4">
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Landlord Support Center</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Suppliers</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Corporate Gift Card Sales</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Office and Foodservice Coffee</a></div>
-            </div>
-        </div>
 
-        <div onclick="toggleFooter(5)" class="mb-4">
-            <div class="flex items-center justify-between py-2 text-[19px] max-md:text-[16px]">
-                <h5>Order and Pick Up</h5>
-                <i id="icon5" class="fa-solid cursor-pointer fa-chevron-down"></i>
+            <div onclick="toggleFooter(5)" class="mb-4">
+                <div class="flex items-center justify-between py-2 text-[19px] max-md:text-[16px]">
+                    <h5>Order and Pick Up</h5>
+                    <i id="icon5" class="fa-solid cursor-pointer fa-chevron-down"></i>
+                </div>
+                <div id="footerDown5" class="hidden mt-4">
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Order on the App</a></div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Order on the Web</a></div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Delivery</a></div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Order and Pick Up
+                            Options</a></div>
+                    <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Explore and Find Coffee
+                            for Home</a></div>
+                </div>
             </div>
-            <div id="footerDown5" class="hidden mt-4">
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Order on the App</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Order on the Web</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Delivery</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Order and Pick Up Options</a></div>
-                <div class="mb-3"><a class="text-[15px] text-gray-500 font-[400]" href="">Explore and Find Coffee for Home</a></div>
-            </div>
-        </div>
         </div>
 
         <hr class="p-[0.5px] h-[1px] border mt-10 bg-gray-200" />

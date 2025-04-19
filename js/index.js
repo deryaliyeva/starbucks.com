@@ -1,9 +1,10 @@
-    const openDiv = document.getElementById('openDiv');
+const openDiv = document.getElementById('openDiv');
 
-    function openMobile() {
-        openDiv.classList.toggle("translate-x-full"); 
-        openDiv.classList.toggle("translate-x-0");   
-    }
+let flag = true
+function openMobile() {
+  openDiv.style.right = flag ? '0%' : '-100%'
+    flag = !flag
+}
 
     function toggleFooter(id) {
         const content = document.getElementById("footerDown" + id);
