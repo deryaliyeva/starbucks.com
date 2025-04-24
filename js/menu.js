@@ -2,7 +2,7 @@ const drinksDiv = document.getElementById('drinksDiv');
 const menuDiv = document.getElementById('menuDiv');
 const data = [];
 
-fetch('../db/db.json')
+fetch('https://starbucks-data-ashy.vercel.app/menus')
     .then(response => response.json())
     .then(info => {
         data.length = 0;
