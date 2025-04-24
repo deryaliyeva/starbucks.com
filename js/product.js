@@ -7,7 +7,7 @@ const productData = [];
 const selectedCategory = new URLSearchParams(location.search).get('category');
 
 
-fetch('../db/db.json')
+fetch('https://starbucks-data-ashy.vercel.app/menus')
     .then(res => res.json())
     .then(info => {
         productData.push(...info.menus);
