@@ -6,7 +6,7 @@ fetch('https://starbucks-data-ashy.vercel.app/menus')
     .then(response => response.json())
     .then(info => {
         data.length = 0;
-        data.push(...info.menus);
+        data.push(...info);
         showDrinks();
         showMenu();
     });

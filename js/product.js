@@ -10,7 +10,7 @@ const selectedCategory = new URLSearchParams(location.search).get('category');
 fetch('https://starbucks-data-ashy.vercel.app/menus')
     .then(res => res.json())
     .then(info => {
-        productData.push(...info.menus);
+        productData.push(...info);
         showProduct();
         showDrinks2();
     });
